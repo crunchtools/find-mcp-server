@@ -375,12 +375,9 @@ Or for HTTP transport:
 
 Ask the user if they want to add to `~/.claude.json` or `~/.claude/settings.json`. If yes, read existing settings, merge, and write back.
 
-### Step 3: Update Architecture Doc
+### Step 3: Monitoring
 
-After installation, update `~/Projects/MCP_ARCHITECTURE.md`:
-- Add to the appropriate table (stdio or HTTP/port allocation)
-- For third-party/experimental servers, mark as **(BETA)**
-- Note the quality grade from the scorecard
+If the server runs as an HTTP container on lotor, hand off to `/deploy-mcp-server` Phase 6 so it gets a port from, and checks in, Nagios — Nagios is the registry of MCP ports. Note the scorecard grade (and **BETA** for third-party/experimental servers) in the memory stored for the install.
 
 ---
 
